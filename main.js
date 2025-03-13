@@ -2,7 +2,10 @@ const input = document.getElementById("QrCodeInput");
 const button = document.getElementById("QrCodeButton");
 const img = document.getElementById("QrCode");
 const linkContainer = document.getElementById("link");
-button.addEventListener("click", async () => {
+
+button.addEventListener("click", async (event) => {
+  event.preventDefault(); // Zatrzymanie domyślnego działania (np. odświeżanie strony)
+
   if (input.value == "") {
     input.classList.remove("error");
     setTimeout(() => {
