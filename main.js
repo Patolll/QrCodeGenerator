@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 });
-input.addEventListener("onkeydown", (event) => {
+input.addEventListener("keydown", (event) => {
   event.preventDefault();
 });
 button.addEventListener("click", async (event) => {
