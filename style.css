@@ -150,3 +150,57 @@ body {
 #icons i {
   transition: transform 0.5s ease;
 }
+@media (max-width: 768px) {
+  #app {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  #app p {
+    font-size: 13px;
+  }
+
+  #app input,
+  #app button {
+    height: 45px;
+  }
+
+  #imgBox img {
+    width: 80px;
+  }
+
+  #QrCode.show-img {
+    max-height: 200px;
+  }
+
+  #icons {
+    top: 85%;
+    gap: 20px;
+  }
+}
+
+/* Dla ekranów o szerokości 480px i mniejszej (telefony) */
+@media (max-width: 480px) {
+  #app {
+    width: 95%;
+    padding: 10px 15px;
+  }
+
+  #app input,
+  #app button {
+    height: 40px;
+  }
+
+  #imgBox img {
+    width: 70px;
+  }
+
+  #QrCode.show-img {
+    max-height: 150px;
+  }
+
+  #icons {
+    top: 80%;
+    gap: 15px;
+  }
+}
