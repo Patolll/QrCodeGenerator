@@ -2,15 +2,6 @@ const input = document.getElementById("QrCodeInput");
 const button = document.getElementById("QrCodeButton");
 const img = document.getElementById("QrCode");
 const linkContainer = document.getElementById("link");
-const form = document.getElementById("form");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-});
-input.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault();
-  }
-});
 button.addEventListener("click", async (event) => {
   event.preventDefault();
 
