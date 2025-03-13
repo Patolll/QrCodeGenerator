@@ -175,6 +175,7 @@ body {
   }
 
   #icons {
+    display: flex;
     top: 85%;
     gap: 20px;
   }
@@ -200,6 +201,7 @@ body {
   }
 
   #icons {
+    display: flex;
     top: 80%;
     gap: 15px;
   }
