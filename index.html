@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator kodów QR</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+    </style>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="qrcode-solid.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="app">
+      <p>Generator kodów QR</p>
+      <form action="">
+        <input
+          type="text"
+          id="QrCodeInput"
+          placeholder="wpisz tekst lub wklej URL"
+          required
+        /><br />
+        <div id="imgBox">
+          <img id="QrCode" />
+        </div>
+        <div id="link"></div>
+        <button type="submit" id="QrCodeButton">Generuj</button>
+      </form>
+    </div>
+    <div id="icons">
+      <a href="https://github.com/Patolll" class="iconsHref" target="_blank"
+        ><i class="fa-brands fa-github fa-5x" style="color: #979af3"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/p_dmochowski/"
+        class="iconsHref"
+        target="_blank"
+        ><i class="fa-brands fa-instagram fa-5x" style="color: #979af3"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/patryk-dmochowski-a7454b2a6/"
+        target="_blank"
+        class="iconsHref"
+        ><i class="fa-brands fa-linkedin fa-5x" style="color: #979af3"></i
+      ></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/61a1475d1e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
