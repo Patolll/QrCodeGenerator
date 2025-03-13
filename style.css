@@ -182,7 +182,6 @@ body {
   }
 }
 
-/* Dla ekranów o szerokości 480px i mniejszej (telefony) */
 @media (max-width: 480px) {
   #app {
     width: 70%;
