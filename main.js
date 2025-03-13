@@ -4,7 +4,7 @@ const img = document.getElementById("QrCode");
 const linkContainer = document.getElementById("link");
 
 button.addEventListener("click", async (event) => {
-  event.preventDefault(); // Zatrzymanie domyślnego działania (np. odświeżanie strony)
+  event.preventDefault();
 
   if (input.value == "") {
     input.classList.remove("error");

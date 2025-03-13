@@ -12,20 +12,23 @@
     <link rel="shortcut icon" href="qrcode-solid.png" type="image/x-icon" />
   </head>
   <body>
-    <div id="app">
-      <p>Generator kodów QR</p>
-      <input
-        type="text"
-        id="QrCodeInput"
-        placeholder="wpisz tekst lub wklej URL"
-        required
-      /><br />
-      <div id="imgBox">
-        <img id="QrCode" />
+    <form action="">
+      <div id="app">
+        <p>Generator kodów QR</p>
+        <input
+          type="text"
+          id="QrCodeInput"
+          placeholder="wpisz tekst lub wklej URL"
+          required
+        /><br />
+        <div id="imgBox">
+          <img id="QrCode" />
+        </div>
+        <div id="link"></div>
+        <button type="submit" id="QrCodeButton">Generuj</button>
       </div>
-      <div id="link"></div>
-      <button type="button" id="QrCodeButton">Generuj</button>
-    </div>
+    </form>
+
     <div id="icons">
       <a href="https://github.com/Patolll" class="iconsHref" target="_blank"
         ><i class="fa-brands fa-github fa-5x" style="color: #979af3"></i
