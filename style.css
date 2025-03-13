@@ -150,6 +150,36 @@ body {
 #icons i {
   transition: transform 0.5s ease;
 }
+@media (max-width: 992px) {
+  #app {
+    width: 70%;
+    padding: 15px 20px;
+  }
+
+  #app p {
+    font-size: 13px;
+  }
+
+  #app input,
+  #app button {
+    height: 45px;
+  }
+
+  #imgBox img {
+    width: 80px;
+  }
+
+  #QrCode.show-img {
+    max-height: 200px;
+  }
+
+  #icons {
+    top: 85%;
+    gap: 20px;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
 @media (max-width: 768px) {
   #app {
     width: 70%;
