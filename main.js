@@ -7,7 +7,9 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 });
 input.addEventListener("keydown", (event) => {
-  event.preventDefault();
+  if (event.key === "Enter") {
+    event.preventDefault();
+  }
 });
 button.addEventListener("click", async (event) => {
   event.preventDefault();
